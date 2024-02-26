@@ -1,4 +1,4 @@
-name = "Jhon"
+name = 'Jhon'
 age = '70'
 print("There once was a man named " + name + ",")
 print("He was " + age + " years old.")
