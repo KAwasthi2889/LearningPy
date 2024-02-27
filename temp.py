@@ -7,3 +7,8 @@ print( "F = " + str(9*C/5 + 32))
 # Convert Fahrenheit to Celsius
 F = 32
 print("C =", (F-32)*5/9)
+
+# Remove \n that is automaticaly at end of print
+F = 32
+print("C =", end='')
+print((F-32)*5/9)

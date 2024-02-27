@@ -1,5 +1,5 @@
-phrase1 = "SATI"
-phrase2 = "cse"
+phrase1 = "SATI ATI"
+phrase2 = "cse ece"
 print(phrase1)
 # Convert to uppercase
 print(phrase2.upper())
@@ -11,3 +11,7 @@ print(phrase2.upper().isupper())
 print(len(phrase1))
 # Gives the specific letter through index
 print(phrase1[2])
+# Find the index of a letter
+print(phrase1.index("I")) 
+# Replace a word
+print(phrase2.replace("ece", "cec"))
