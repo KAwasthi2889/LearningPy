@@ -8,7 +8,9 @@ print( "F = " + str(9*C/5 + 32))
 F = 32
 print("C =", (F-32)*5/9)
 
-# Remove \n that is automaticaly at end of print
+# Remove \n that is automaticaly at end of print usig end command
 F = 32
 print("C =", end='')
 print((F-32)*5/9)
+# Also we can use format funtion
+print("C ={0}".format((F-32)*5/9))
