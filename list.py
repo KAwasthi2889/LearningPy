@@ -10,7 +10,9 @@ print(arr.count('Xyz'))
 lis.insert(0, 00)
 print(lis)
 # Remove element
-arr.remove('Vw')
+arr.remove('Xyz') # by name
+arr.pop() # last element
+arr.pop(6) # with index
 
 # Extend function adds the elements of list
 lis.extend(arr)
