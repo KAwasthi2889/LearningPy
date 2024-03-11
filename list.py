@@ -27,3 +27,12 @@ print(lis)
 # Clear list
 lis.clear()
 print(lis)
+
+# Sorting the list
+lis = [11, 22, 23, 94, 85, 26, 17, 48, 9]
+print(sorted(lis)) # Using sorted function only gives sorted list but dosent change the list itself
+print(lis)
+arr = 'Yellow Red Green Voilet Orange Blue'.split() # Spliting the elements using split function
+print(arr)
+arr.sort() # Sort function sorts the list itself
+print(arr)
