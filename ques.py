@@ -51,12 +51,15 @@
 
 # print('\n\n')
 
-# Question 5
-alkaline_earth_metals = [['beryllium', 4], ['magnesium', 12], ['calcium', 20], ['strontium', 38], ['barium', 56], ['radium', 88]] 
-print(alkaline_earth_metals[5])
-print(alkaline_earth_metals[-1])
-print(len(alkaline_earth_metals))
-print(max(alkaline_earth_metals, key=lambda x: x[1]))
+# # Question 5
+# alkaline_earth_metals = [['beryllium', 4], ['magnesium', 12], ['calcium', 20], ['strontium', 38], ['barium', 56], ['radium', 88]] 
+# print(alkaline_earth_metals[5])
+# print(alkaline_earth_metals[-1])
+# print(len(alkaline_earth_metals))
+# temp = []
+# for i in range (0 , 6):
+#     temp.append(alkaline_earth_metals[i][1])
+# print(alkaline_earth_metals[temp.index(max(temp))])
 
 #  print('\n\n')
 
@@ -74,7 +77,16 @@ print(max(alkaline_earth_metals, key=lambda x: x[1]))
 
 #  print('\n\n')
 
-# Question 7
+# # Question 7
+# def same_first_last(L: list) -> bool:
+#     if(len(L) >= 2) and (L[0] == L[-1]):
+#         return True
+#     else:
+#         return False
+# print(same_first_last([3, 4, 2, 8, 3]))
+# print(same_first_last(['apple', 'banana', 'pear']))
+# print(same_first_last([4.0, 4.5]))
+
 
 #  print('\n\n')
 
