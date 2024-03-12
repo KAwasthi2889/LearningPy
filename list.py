@@ -4,6 +4,8 @@ lis = [11, 22, 33, 44, 55, 66, 77, 88, 99]
 arr.append('Xyz')
 # Print everything from list
 print(arr)
+# Gives the lenght
+print(len(arr))
 # Count the number of times
 print(arr.count('Xyz'))
 # Insert element in front of index number
