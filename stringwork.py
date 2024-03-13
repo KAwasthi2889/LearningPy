@@ -15,3 +15,10 @@ print(phrase1[2])
 print(phrase1.index("I")) 
 # Replace a word
 print(phrase2.replace("ece", "cec"))
+
+# For loop in string
+num = 60
+res = ''
+for i in str(num):
+    res += str(int(i)**2)
+print(int(res))
