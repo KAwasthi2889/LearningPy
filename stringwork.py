@@ -22,3 +22,7 @@ res = ''
 for i in str(num):
     res += str(int(i)**2)
 print(int(res))
+
+# len can also give the length of words
+word = 'ABC'
+print(len(word))
