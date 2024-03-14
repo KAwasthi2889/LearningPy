@@ -26,3 +26,8 @@ print(int(res))
 # len can also give the length of words
 word = 'ABC'
 print(len(word))
+
+# Methods are used in series
+dna = 'ATCGAATTCCGG' # replace() will replace the letter
+dna = dna.replace('A', 't').replace('T', 'a').replace('C', 'g').replace('G', 'c').upper()
+print(dna)
