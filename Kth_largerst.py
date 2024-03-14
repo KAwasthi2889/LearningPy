@@ -1,8 +1,7 @@
 arr = [1, 2, 5, 4, 7, 5, 4, 6, 8]
-n = len(arr)
 k = int(input("Which largest element do you want? ")) - 1
 temp = []
-for i in range (0, n):
+for i in range (0, len(arr)):
     temp.append(arr[i])
 while(k > 0):
     highest_element = max(temp)

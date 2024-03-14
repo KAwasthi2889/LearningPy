@@ -1,12 +1,14 @@
 def duplicate_encode(word):
-    temp = []
-    for i in word:
-        temp.append(i)
-    for i in word: 
-        if (word.count(i) > 1):
-            temp[temp.index(i)] = '('
+    arr = []
+    temp = ''
+    for i in word.lower():
+        arr.append(i)
+    for i in range(len(word)):
+        if word.count(word[i]) > 1:
+            arr[i] = ')'
         else:
-            temp[temp.index(i)] = ')'
-    
-    print(temp)
-duplicate_encode('ABBCCC') 
+            arr[i] = '('
+    for k in range (0, len(arr)):
+        temp += arr[k]  
+    return temp
+print(duplicate_encode('HGSv R NR )A'))
