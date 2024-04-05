@@ -42,7 +42,7 @@ print ((-3) ** 2)
 print (3 ** -2) # Here -power converts 3 to 0.333
 print (-3 ** -2)
 print(pow( -2, 4)) # But pow evaluates like (-2)**4
-print(pow(2, 3, 3)) # Evaluates like 2**3 and then % 3
+print(pow(6, 2, 3)) # Evaluates like 6**2 and then % 3
 
 
 # Assignment dosent change the output if not specified

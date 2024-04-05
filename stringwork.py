@@ -7,7 +7,7 @@ print(phrase2.upper())
 print(phrase2.islower())
 print(phrase2.upper().isupper())
 
-# Gives the lenght
+# Gives the length
 print(len(phrase1))
 # Gives the specific letter through index
 print(phrase1[2])
@@ -31,3 +31,5 @@ print(len(word))
 dna = 'ATCGAATTCCGG' # replace() will replace the letter
 dna = dna.replace('A', 't').replace('T', 'a').replace('C', 'g').replace('G', 'c').upper()
 print(dna)
+
+# Repeating a string

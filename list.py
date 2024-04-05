@@ -38,3 +38,15 @@ arr = 'Yellow Red Green Voilet Orange Blue'.split() # Spliting the elements usin
 print(arr)
 arr.sort() # Sort function sorts the list itself
 print(arr)
+
+'''
+lists are mutable, i.e., like pointers any change in one can do the change in another.
+This is because lists share the same memory address when assigned to eachother.
+'''
+lis = [11, 22, 23, 94, 85, 26, 17, 48, 9]
+lis2 = lis
+lis2[0] = 12
+print(lis)
+
+
+

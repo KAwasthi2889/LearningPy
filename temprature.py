@@ -12,5 +12,5 @@ print("C =", (F-32)*5/9)
 F = 32
 print("C =", end='')
 print((F-32)*5/9)
-# Also we can use format funtion
+# Also we can use string format funtion
 print("C ={0}".format((F-32)*5/9))
