@@ -19,7 +19,7 @@ arr.pop(6) # with index
 # Extend function adds the elements of list
 lis.extend(arr)
 print(lis)
-# Range of index dosent include last range element
+# Slicing of index dosent include last range element
 print(arr[1:6])
 
 # Replace the element
@@ -32,21 +32,19 @@ print(lis)
 
 # Sorting the list
 lis = [11, 22, 23, 94, 85, 26, 17, 48, 9]
-print(sorted(lis)) # Using sorted function only gives sorted list but dosent change the list itself
+print(sorted(lis)) # Using sorted function returns sorted list but dosent change the list itself
 print(lis)
-arr = 'Yellow Red Green Voilet Orange Blue'.split() # Spliting the elements using split function
-print(arr)
-arr.sort() # Sort function sorts the list itself
-print(arr)
+lis.sort() # Sort method sorts the list itself but returns None
+print(lis)
 
-'''
-lists are mutable, i.e., like pointers any change in one can do the change in another.
-This is because lists share the same memory address when assigned to eachother.
-'''
+'''lists are mutable, i.e., like pointers any change in one can do the change in another.
+This is because lists share the same memory address when assigned to eachother.'''
+
 lis = [11, 22, 23, 94, 85, 26, 17, 48, 9]
 lis2 = lis
 lis2[0] = 12
-print(lis)
+print(lis) # Change in lis2 also updates lis as it's mutable
+print(lis.index(94)) # Finds the index of element
 
 
 

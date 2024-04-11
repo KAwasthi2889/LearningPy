@@ -11,6 +11,7 @@ print(phrase2.upper().isupper())
 print(len(phrase1))
 # Gives the specific letter through index
 print(phrase1[2])
+print(phrase1[:6]) # Slicing a string
 # Find the index of a letter
 print(phrase1.index("I")) 
 # Replace a word
@@ -27,9 +28,12 @@ print(int(res))
 word = 'ABC'
 print(len(word))
 
-# Methods are used in series
+# Methods can be used in series
 dna = 'ATCGAATTCCGG' # replace() will replace the letter
 dna = dna.replace('A', 't').replace('T', 'a').replace('C', 'g').replace('G', 'c').upper()
 print(dna)
 
-# Repeating a string
+a = 'String Work'
+print(a.count('g')) # Count the number of times a letter is present
+print(a.split()) # Spliting the elements to a list using split method
+print(a) # The split method returns the list but dosent convert the variable
