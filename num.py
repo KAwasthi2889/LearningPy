@@ -1,11 +1,3 @@
-# Print the message n times
-n = int(input("How many times do you want to print a?\n"))
-
-
-# Specify data type as input is inherintly a string
-print("a" * n)
-
-
 # Absolute value
 r = -9
 print(abs(r))
@@ -57,4 +49,20 @@ print(double) # Now double is not 10 but 40 as before bcz double is not reassign
 d = 5
 d *= 2+3
 print(d)
+
+# Typecasting
+v = 30
+v = int(v)
+print(v + 1)
+
+# Typecasting a function
+def sum(a : float, b : float) -> int: # Here :<type> and -> <type> is for programmers to error check.
+    return int(a + b)
+# Here the function take only integer parameter and returns an integer
+x = float(input("Enter the first number: "))
+y = float(input("Enter the second number: "))
+print("The sum of", x,"and", y,"in integer is", sum(x, y))
+# Typecasting before and after can lead to varrying results, try 25.8 and 25.9
+x1, y1 = int(x), int(y)
+print("The sum of", x,"and", y,"in integer is", sum(x1, y1)) 
 
