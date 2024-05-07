@@ -1,12 +1,12 @@
 def perfect_num(limit):
-    divisors = []
+    numbers = []
     for num in range(2, limit + 1):
         sum = 1 
         for divisor in range(2, int(num ** 0.5) + 1):
             if num % divisor == 0:
                 sum += divisor + num / divisor
         if sum == num:
-            divisors.append(num)
-    return divisors
+            numbers.append(num)
+    return numbers
 limit = 10000
 print(perfect_num(limit))

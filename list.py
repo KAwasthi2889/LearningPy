@@ -47,6 +47,7 @@ print(lis) # Change in lis2 also updates lis as it's mutable
 print(lis.index(94)) # Finds the index of element
 lis.reverse() # Reverses the list but returns None
 print(lis)
+print(lis[-1::-1]) # Printing the list in reverce through negative indexing.
 
 
 
