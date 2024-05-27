@@ -4,7 +4,9 @@
 import will also run the progam basic.py
 '''
 
-class item:
+import csv
+
+class Item:
         
         discount = 20 # This is a class attribute as it is available for all for whole class
         all = []
@@ -14,23 +16,39 @@ class item:
             self.name = name
             self.price = price
             self.quantity = quantity
-            item.all.append(self)
+            Item.all.append(self)
 
         def total_price(self):
             return self.quantity * self.price * (1 - self.discount/100)
+        
+        @classmethod # Classmethod can only be called from class
+        def from_csv(cls):
+            with open('OOP/items.csv', 'r') as file:
+                content = csv.DictReader(file) # arranging content as dictionary
+                items = list(content) # making list of dictioary
+                for item in items:
+                    Item(
+                        name = str(item.get('name')),
+                        price = float(item.get('price')),
+                        quantity = int(item.get('quantity')) 
+                    )
+
         
         def __repr__(self):
             # tells how to reprsent the informationin in print
             return f"Item({self.name}, {self.price}, {self.quantity})"
 
 
+Item.from_csv()
+'''
+used CSV file for the data
 item1 = item('Phone', 100, 1 )
 item2 = item('Laptop', 1000, 2)
 item3 = item('Keyboard', 10, 5)
 item4 = item('Cable', 15, 10)
 item5 = item('Mouse', 5, 8)
-
-print(item.all)
+'''
+print(Item.all)
 
 
 
