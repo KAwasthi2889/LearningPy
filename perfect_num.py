@@ -1,3 +1,4 @@
+# Sum of all the divisors except itself is equal to itself.
 def perfect_num(limit):
     numbers = []
     for num in range(2, limit + 1):
