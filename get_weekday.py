@@ -41,4 +41,4 @@ while True:
         print(f"The day on {date}/{month}/{year} is {week_names[weekday]}")
         break
     else:
-        print("Invalid DATE! Please enter again")
+        print("Invalid DATE! Please enter the date again:-\n\n")
